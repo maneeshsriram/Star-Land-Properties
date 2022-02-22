@@ -65,6 +65,14 @@
                         <input type="hidden">
                     </form>
                 </li>
+                
+                {% if user.username == "maneesh" %}
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="{% url 'admin:index' %}" target="_blank">
+                        <i class="fas fa-user-cog pr-2"></i>ADMIN</a>
+                </li>
+                {% endif %}
+
 
                 {% else %}
                     <li 
